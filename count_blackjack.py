@@ -23,7 +23,7 @@ class CountBlackjack(BlackjackEnv):
         super().__init__(natural=natural)
         self.action_space = spaces.Discrete(3)
         self.observation_space = spaces.Tuple(
-            (spaces.Discrete(32), spaces.Discrete(11), spaces.Discrete(20), spaces.Discrete(3))
+            (spaces.Discrete(32), spaces.Discrete(11), spaces.Discrete(3), spaces.Discrete(22))
         )
         self.deck = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10] * 4
 
